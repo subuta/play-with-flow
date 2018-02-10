@@ -1,0 +1,30 @@
+{
+  "presets": [
+    [
+      "babel-preset-poi",
+      {
+        "jsx": "react"
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-flow-strip-types"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": [
+              "./"
+            ],
+            "alias": {
+              "@": "./src"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

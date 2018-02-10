@@ -26,20 +26,7 @@ module.exports = function (wallaby) {
     compilers: {
       '**/*.js': wallaby.compilers.babel({
         babel,
-        babelrc: false,
-        presets: [
-          [require.resolve('babel-preset-poi'), { jsx: 'react' }]
-        ],
-        plugins: [
-          ['module-resolver',
-            {
-              root: ['./'],
-              alias: {
-                '@': './src',
-              },
-            },
-          ],
-        ],
+        babelrc: true
       })
     }
   }

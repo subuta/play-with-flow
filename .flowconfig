@@ -5,4 +5,8 @@
 [libs]
 /flow-typed
 
+[lints]
+
 [options]
+
+[strict]
