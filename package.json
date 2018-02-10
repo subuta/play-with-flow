@@ -1,0 +1,38 @@
+{
+  "name": "play-with-flow",
+  "version": "1.0.0",
+  "description": "playground for flow (+ poi)",
+  "main": "index.js",
+  "scripts": {
+    "build": "poi build",
+    "watch": "poi --port 4001",
+    "poi": "poi",
+    "svg": "svg-sprite -C ./svg-sprite-config.json -D static/assets 'assets/svg/*.svg'",
+    "mat": "../node_modules/.bin/mat",
+    "test": "NODE_PATH=./ ../node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subuta/play-with-flow.git"
+  },
+  "author": "subuta <shunta.3110@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/subuta/play-with-flow/issues"
+  },
+  "homepage": "https://github.com/subuta/play-with-flow#readme",
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.2.2",
+    "poi": "^9.6.13",
+    "poi-preset-react": "^9.2.1",
+    "proxyquire": "^1.8.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
